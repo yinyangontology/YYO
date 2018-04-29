@@ -2,6 +2,7 @@
 
 
 <!DOCTYPE rdf:RDF [
+    <!ENTITY ontochina "http://purl.ontochina.org/" >
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
@@ -12,8 +13,9 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;yyo.owl#"
-     xml:base="&obo;yyo.owl"
+<rdf:RDF xmlns="&ontochina;yyo.owl#"
+     xml:base="&ontochina;yyo.owl"
+     xmlns:ontochina="http://purl.ontochina.org/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -21,16 +23,16 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="&obo;yyo.owl">
+    <owl:Ontology rdf:about="&ontochina;yyo.owl">
         <dc:date xml:lang="en">2018-04-29</dc:date>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.09</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.11</owl:versionInfo>
         <dc:description xml:lang="en">YYO is a formal ontology that represents the Yin and Yang and related entities originated in Chinese philosophy.</dc:description>
         <dc:subject xml:lang="en">YYO: A formal ontology about Yin and Yang.</dc:subject>
         <dc:title xml:lang="en">YYO: Yin-Yang Ontology</dc:title>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <owl:imports rdf:resource="&obo;yyo/BFO_import.owl"/>
-        <owl:imports rdf:resource="&obo;yyo/IAO_import.owl"/>
+        <owl:imports rdf:resource="&ontochina;yyo/BFO_import.owl"/>
+        <owl:imports rdf:resource="&ontochina;yyo/IAO_import.owl"/>
     </owl:Ontology>
     
 
@@ -63,47 +65,47 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000007 -->
+    <!-- http://purl.ontochina.org/YYO_0000007 -->
 
-    <owl:ObjectProperty rdf:about="&obo;YYO_0000007">
+    <owl:ObjectProperty rdf:about="&ontochina;YYO_0000007">
         <rdfs:label xml:lang="en">has profile</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000017 -->
+    <!-- http://purl.ontochina.org/YYO_0000017 -->
 
-    <owl:ObjectProperty rdf:about="&obo;YYO_0000017">
+    <owl:ObjectProperty rdf:about="&ontochina;YYO_0000017">
         <rdfs:label xml:lang="ch">一爻性质</rdfs:label>
         <rdfs:label xml:lang="en">has first yao profile</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;YYO_0000007"/>
+        <rdfs:subPropertyOf rdf:resource="&ontochina;YYO_0000007"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000018 -->
+    <!-- http://purl.ontochina.org/YYO_0000018 -->
 
-    <owl:ObjectProperty rdf:about="&obo;YYO_0000018">
+    <owl:ObjectProperty rdf:about="&ontochina;YYO_0000018">
         <rdfs:label xml:lang="ch">二爻性质</rdfs:label>
         <rdfs:label xml:lang="en">has second yao profile</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;YYO_0000007"/>
+        <rdfs:subPropertyOf rdf:resource="&ontochina;YYO_0000007"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000019 -->
+    <!-- http://purl.ontochina.org/YYO_0000019 -->
 
-    <owl:ObjectProperty rdf:about="&obo;YYO_0000019">
+    <owl:ObjectProperty rdf:about="&ontochina;YYO_0000019">
         <rdfs:label xml:lang="ch">三爻性质</rdfs:label>
         <rdfs:label xml:lang="en">has third yao profile</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;YYO_0000007"/>
+        <rdfs:subPropertyOf rdf:resource="&ontochina;YYO_0000007"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000032 -->
+    <!-- http://purl.ontochina.org/YYO_0000032 -->
 
-    <owl:ObjectProperty rdf:about="&obo;YYO_0000032">
+    <owl:ObjectProperty rdf:about="&ontochina;YYO_0000032">
         <rdfs:label xml:lang="ch">生</rdfs:label>
         <rdfs:label xml:lang="en">sheng</rdfs:label>
         <obo:IAO_0000119 xml:lang="ch">http://m.lnka.cn/detail.aspx?articleId=21&amp;page=100</obo:IAO_0000119>
@@ -112,9 +114,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000033 -->
+    <!-- http://purl.ontochina.org/YYO_0000033 -->
 
-    <owl:ObjectProperty rdf:about="&obo;YYO_0000033">
+    <owl:ObjectProperty rdf:about="&ontochina;YYO_0000033">
         <rdfs:label xml:lang="ch">克</rdfs:label>
         <rdfs:label xml:lang="en">ke</rdfs:label>
         <obo:IAO_0000119 xml:lang="ch">http://m.lnka.cn/detail.aspx?articleId=21&amp;page=100</obo:IAO_0000119>
@@ -123,45 +125,45 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000034 -->
+    <!-- http://purl.ontochina.org/YYO_0000034 -->
 
-    <owl:ObjectProperty rdf:about="&obo;YYO_0000034">
+    <owl:ObjectProperty rdf:about="&ontochina;YYO_0000034">
         <rdfs:label xml:lang="en">inhibits formation of</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;YYO_0000033"/>
+        <rdfs:subPropertyOf rdf:resource="&ontochina;YYO_0000033"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000035 -->
+    <!-- http://purl.ontochina.org/YYO_0000035 -->
 
-    <owl:ObjectProperty rdf:about="&obo;YYO_0000035">
+    <owl:ObjectProperty rdf:about="&ontochina;YYO_0000035">
         <rdfs:label xml:lang="en">promotes formation of</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;YYO_0000032"/>
+        <rdfs:subPropertyOf rdf:resource="&ontochina;YYO_0000032"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000036 -->
+    <!-- http://purl.ontochina.org/YYO_0000036 -->
 
-    <owl:ObjectProperty rdf:about="&obo;YYO_0000036">
+    <owl:ObjectProperty rdf:about="&ontochina;YYO_0000036">
         <rdfs:label xml:lang="en">controls</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;YYO_0000033"/>
+        <rdfs:subPropertyOf rdf:resource="&ontochina;YYO_0000033"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000037 -->
+    <!-- http://purl.ontochina.org/YYO_0000037 -->
 
-    <owl:ObjectProperty rdf:about="&obo;YYO_0000037">
+    <owl:ObjectProperty rdf:about="&ontochina;YYO_0000037">
         <rdfs:label xml:lang="en">give birth to</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;YYO_0000032"/>
+        <rdfs:subPropertyOf rdf:resource="&ontochina;YYO_0000032"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000068 -->
+    <!-- http://purl.ontochina.org/YYO_0000068 -->
 
-    <owl:ObjectProperty rdf:about="&obo;YYO_0000068">
+    <owl:ObjectProperty rdf:about="&ontochina;YYO_0000068">
         <rdfs:label xml:lang="en">has participant</rdfs:label>
         <rdfs:comment>This term may come from RO.</rdfs:comment>
     </owl:ObjectProperty>
@@ -186,12 +188,12 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                 </owl:unionOf>
             </owl:Class>
@@ -200,157 +202,160 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000000 -->
+    <!-- http://purl.ontochina.org/YYO_0000000 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000000">
+    <owl:Class rdf:about="&ontochina;YYO_0000000">
         <rdfs:label xml:lang="ch">道</rdfs:label>
         <rdfs:label xml:lang="en">dao</rdfs:label>
-        <rdfs:comment>“道生一，一生二，二生三，三生万物。万物负阴而抱阳，冲气以为和。&quot; - 道德经 (Tao Te Ching). 
-Translation: The Dao produced One; One produced Two; Two produced Three; Three produced All things. All things leave behind them the Yin (or translated to Obscurity) (out of which they have come), and go forward to embrace the Yang (or translated to Brightness) (into which they have emerged), while they are harmonised by the Breath of Vacancy.</rdfs:comment>
-        <obo:IAO_0000119 xml:lang="ch">https://ctext.org/dao-de-jing/ens?searchu=%E9%81%93%E7%94%9F%E4%B8%80%EF%BC%8C%E4%B8%80%E7%94%9F%E4%BA%8C%EF%BC%8C%E4%BA%8C%E7%94%9F%E4%B8%89%EF%BC%8C%E4%B8%89%E7%94%9F%E8%90%AC%E7%89%A9%E3%80%82</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Laozi in the Tao Te Ching explains that the Tao is not a &apos;name&apos; for a &apos;thing&apos; but the underlying natural order of the Universe whose ultimate essence is difficult to circumscribe due to it being non conceptual yet evident&apos; in one&apos;s being of aliveness.</rdfs:comment>
-        <obo:IAO_0000115 xml:lang="en">dao (道) is something that is the ultimate cause of an entity.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Tao</obo:IAO_0000119>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="ch">https://ctext.org/dao-de-jing/ens?searchu=%E9%81%93%E7%94%9F%E4%B8%80%EF%BC%8C%E4%B8%80%E7%94%9F%E4%BA%8C%EF%BC%8C%E4%BA%8C%E7%94%9F%E4%B8%89%EF%BC%8C%E4%B8%89%E7%94%9F%E8%90%AC%E7%89%A9%E3%80%82</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="ch">https://en.wikipedia.org/wiki/Tao_Te_Ching</obo:IAO_0000119>
         <rdfs:comment xml:lang="ch">阴阳就是道。 系辞传说：“一阴一阳之谓道”、“天之道，曰阴与阳也”，并引用孔子的话：“形而上者谓之道，形而下者谓之器”，所以说儒家认同：“道者，阴阳变化之理也。”道，即宇宙运行，自然变化的法则。</rdfs:comment>
+        <rdfs:comment xml:lang="en">Laozi in the Tao Te Ching explains that the Tao is not a &apos;name&apos; for a &apos;thing&apos; but the underlying natural order of the Universe whose ultimate essence is difficult to circumscribe due to it being non conceptual yet evident&apos; in one&apos;s being of aliveness.</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">dao (道) is something that is the ultimate cause of an entity.</obo:IAO_0000115>
+        <rdfs:comment>“道生一，一生二，二生三，三生万物。万物负阴而抱阳，冲气以为和。&quot; - 道德经 (Tao Te Ching). 
+Translation: The Dao produced One; One produced Two; Two produced Three; Three produced All things. All things leave behind them the Yin (or translated to Obscurity) (out of which they have come), and go forward to embrace the Yang (or translated to Brightness) (into which they have emerged), while they are harmonised by the Breath of Vacancy.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000001 -->
+    <!-- http://purl.ontochina.org/YYO_0000001 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000001">
+    <owl:Class rdf:about="&ontochina;YYO_0000001">
         <rdfs:label xml:lang="ch">阴体</rdfs:label>
         <rdfs:label xml:lang="en">yin entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="ch">An entity that has a yin profile.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000002 -->
+    <!-- http://purl.ontochina.org/YYO_0000002 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000002">
+    <owl:Class rdf:about="&ontochina;YYO_0000002">
         <rdfs:label xml:lang="ch">阳体</rdfs:label>
         <rdfs:label xml:lang="en">yang entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="ch">An entity that has a yang profile.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000003 -->
+    <!-- http://purl.ontochina.org/YYO_0000003 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000003">
+    <owl:Class rdf:about="&ontochina;YYO_0000003">
         <rdfs:label xml:lang="ch">阴阳相互作用</rdfs:label>
         <rdfs:label xml:lang="en">yin-yang interaction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
-        <dc:creator xml:lang="en">YH</dc:creator>
+        <obo:IAO_0000115>An interaction between yin and yang entities</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000004 -->
+    <!-- http://purl.ontochina.org/YYO_0000004 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000004">
+    <owl:Class rdf:about="&ontochina;YYO_0000004">
         <rdfs:label xml:lang="en">yin-yang profile</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
-        <dc:creator>YH</dc:creator>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000115>A profile that is shown in a yin-yang entity.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000005 -->
+    <!-- http://purl.ontochina.org/YYO_0000005 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000005">
+    <owl:Class rdf:about="&ontochina;YYO_0000005">
         <rdfs:label xml:lang="en">yin profile</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000004"/>
-        <dc:creator>YH</dc:creator>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000004"/>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000006 -->
+    <!-- http://purl.ontochina.org/YYO_0000006 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000006">
+    <owl:Class rdf:about="&ontochina;YYO_0000006">
         <rdfs:label xml:lang="en">yang profile</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000004"/>
-        <dc:creator>YH</dc:creator>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000004"/>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000009 -->
+    <!-- http://purl.ontochina.org/YYO_0000009 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000009">
+    <owl:Class rdf:about="&ontochina;YYO_0000009">
         <rdfs:label xml:lang="ch">乾体</rdfs:label>
         <rdfs:label xml:lang="en">qian entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000012"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang profile at the first yao profile, yang profile at the second yao profile, and yang profile at the third yao profile.</obo:IAO_0000115>
@@ -359,46 +364,46 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000010 -->
+    <!-- http://purl.ontochina.org/YYO_0000010 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000010">
+    <owl:Class rdf:about="&ontochina;YYO_0000010">
         <rdfs:label xml:lang="ch">坤体</rdfs:label>
         <rdfs:label xml:lang="en">kun entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000012"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin profile at the first yao profile, yin profile at the second yao profile, and yin profile at the third yao profile.</obo:IAO_0000115>
@@ -407,12 +412,13 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000011 -->
+    <!-- http://purl.ontochina.org/YYO_0000011 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000011">
+    <owl:Class rdf:about="&ontochina;YYO_0000011">
         <rdfs:label xml:lang="ch">五行体</rdfs:label>
         <rdfs:label xml:lang="en">wuxing entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="ch">an entity that can be described using the Wuxing theory in Chinese philosophy. Based on the theory, an entity can be one of five entities classified based on different levels of yin and yang.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="ch">five xing entity</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="ch">http://www.newworldencyclopedia.org/entry/Wu_Xing</obo:IAO_0000119>
@@ -439,13 +445,14 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000012 -->
+    <!-- http://purl.ontochina.org/YYO_0000012 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000012">
+    <owl:Class rdf:about="&ontochina;YYO_0000012">
         <rdfs:label xml:lang="ch">八卦体</rdfs:label>
         <rdfs:label xml:lang="en">bagua entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
         <obo:IAO_0000115 xml:lang="ch">An entity that can be described using the Bagua theory in Chinese philosophy. Such an entity can be represented using 3 hexgram lines (yao), each of which represents a yin or yang entity.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="ch">eight gua yin-yang entity</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="ch">https://en.wikipedia.org/wiki/Bagua</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
@@ -453,34 +460,34 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000013 -->
+    <!-- http://purl.ontochina.org/YYO_0000013 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000013">
+    <owl:Class rdf:about="&ontochina;YYO_0000013">
         <rdfs:label xml:lang="ch">金体</rdfs:label>
         <rdfs:label xml:lang="en">jin entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000030"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000030"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000011"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000032"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000015"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000033"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000033"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000014"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000030"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000032"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="ch">少阴体</obo:IAO_0000118>
@@ -492,34 +499,34 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000014 -->
+    <!-- http://purl.ontochina.org/YYO_0000014 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000014">
+    <owl:Class rdf:about="&ontochina;YYO_0000014">
         <rdfs:label xml:lang="ch">木体</rdfs:label>
         <rdfs:label xml:lang="en">mu entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000029"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000029"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000011"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000029"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000032"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000033"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000027"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000033"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000032"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000016"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="ch">少阳体</obo:IAO_0000118>
@@ -531,34 +538,34 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000015 -->
+    <!-- http://purl.ontochina.org/YYO_0000015 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000015">
+    <owl:Class rdf:about="&ontochina;YYO_0000015">
         <rdfs:label xml:lang="ch">水体</rdfs:label>
         <rdfs:label xml:lang="en">shui entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000031"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000031"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000011"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000033"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000016"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000032"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000031"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000033"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000032"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000014"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="ch">太阴体</obo:IAO_0000118>
@@ -570,34 +577,34 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000016 -->
+    <!-- http://purl.ontochina.org/YYO_0000016 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000016">
+    <owl:Class rdf:about="&ontochina;YYO_0000016">
         <rdfs:label xml:lang="ch">火体</rdfs:label>
         <rdfs:label xml:lang="en">huo entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000028"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000028"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000011"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000032"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000027"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000032"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000033"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000013"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000028"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000033"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="ch">太阳体</obo:IAO_0000118>
@@ -610,46 +617,46 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000020 -->
+    <!-- http://purl.ontochina.org/YYO_0000020 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000020">
+    <owl:Class rdf:about="&ontochina;YYO_0000020">
         <rdfs:label xml:lang="ch">巽体</rdfs:label>
         <rdfs:label xml:lang="en">xun entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000012"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin profile at the first yao profile, yang profile at the second yao profile, and yang profile at the third yao profile.</obo:IAO_0000115>
@@ -658,46 +665,46 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000021 -->
+    <!-- http://purl.ontochina.org/YYO_0000021 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000021">
+    <owl:Class rdf:about="&ontochina;YYO_0000021">
         <rdfs:label xml:lang="ch">坎体</rdfs:label>
         <rdfs:label xml:lang="en">kan entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000012"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin profile at the first yao profile, yang profile at the second yao profile, and yin profile at the third yao profile.</obo:IAO_0000115>
@@ -706,46 +713,46 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000022 -->
+    <!-- http://purl.ontochina.org/YYO_0000022 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000022">
+    <owl:Class rdf:about="&ontochina;YYO_0000022">
         <rdfs:label xml:lang="ch">艮体</rdfs:label>
         <rdfs:label xml:lang="en">gen entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000012"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin profile at the first yao profile, yin profile at the second yao profile, and yang profile at the third yao profile.</obo:IAO_0000115>
@@ -754,46 +761,46 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000023 -->
+    <!-- http://purl.ontochina.org/YYO_0000023 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000023">
+    <owl:Class rdf:about="&ontochina;YYO_0000023">
         <rdfs:label xml:lang="ch">震体</rdfs:label>
         <rdfs:label xml:lang="en">zhen entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000012"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang profile at the first yao profile, yin profile at the second yao profile, and yin profile at the third yao profile.</obo:IAO_0000115>
@@ -802,46 +809,46 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000024 -->
+    <!-- http://purl.ontochina.org/YYO_0000024 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000024">
+    <owl:Class rdf:about="&ontochina;YYO_0000024">
         <rdfs:label xml:lang="ch">离体</rdfs:label>
         <rdfs:label xml:lang="en">li entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000012"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang profile at the first yao profile, yin profile at the second yao profile, and yang profile at the third yao profile.</obo:IAO_0000115>
@@ -850,46 +857,46 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000025 -->
+    <!-- http://purl.ontochina.org/YYO_0000025 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000025">
+    <owl:Class rdf:about="&ontochina;YYO_0000025">
         <rdfs:label xml:lang="ch">兑体</rdfs:label>
         <rdfs:label xml:lang="en">dui entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000012"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000019"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000017"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang profile at the first yao profile, yang profile at the second yao profile, and yin profile at the third yao profile.</obo:IAO_0000115>
@@ -898,52 +905,52 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000026 -->
+    <!-- http://purl.ontochina.org/YYO_0000026 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000026">
+    <owl:Class rdf:about="&ontochina;YYO_0000026">
         <rdfs:label xml:lang="en">yang continuant</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000002"/>
-                    <rdf:Description rdf:about="&obo;YYO_0000002"/>
+                    <rdf:Description rdf:about="&ontochina;YYO_0000002"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000002"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000002"/>
         <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yang entity and continuant</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000027 -->
+    <!-- http://purl.ontochina.org/YYO_0000027 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000027">
+    <owl:Class rdf:about="&ontochina;YYO_0000027">
         <rdfs:label xml:lang="ch">土体</rdfs:label>
         <rdfs:label xml:lang="en">tu entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000056"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000056"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000011"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000033"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000015"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000032"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000013"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000033"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000056"/>
+                <owl:onProperty rdf:resource="&ontochina;YYO_0000032"/>
+                <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="ch">混沌体</obo:IAO_0000118>
@@ -955,263 +962,263 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000028 -->
+    <!-- http://purl.ontochina.org/YYO_0000028 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000028">
+    <owl:Class rdf:about="&ontochina;YYO_0000028">
         <rdfs:label xml:lang="en">lao yang profile</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000006"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000006"/>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000029 -->
+    <!-- http://purl.ontochina.org/YYO_0000029 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000029">
+    <owl:Class rdf:about="&ontochina;YYO_0000029">
         <rdfs:label xml:lang="en">shao yang profile</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000006"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000006"/>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000030 -->
+    <!-- http://purl.ontochina.org/YYO_0000030 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000030">
+    <owl:Class rdf:about="&ontochina;YYO_0000030">
         <rdfs:label xml:lang="en">shao yin profile</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000005"/>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000031 -->
+    <!-- http://purl.ontochina.org/YYO_0000031 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000031">
+    <owl:Class rdf:about="&ontochina;YYO_0000031">
         <rdfs:label xml:lang="en">lao yin profile</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000005"/>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000038 -->
+    <!-- http://purl.ontochina.org/YYO_0000038 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000038">
+    <owl:Class rdf:about="&ontochina;YYO_0000038">
         <rdfs:label xml:lang="en">site yang entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000029"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000026"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000026"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000039 -->
+    <!-- http://purl.ontochina.org/YYO_0000039 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000039">
+    <owl:Class rdf:about="&ontochina;YYO_0000039">
         <rdfs:label xml:lang="en">time yang entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000008"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000053"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000053"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000040 -->
+    <!-- http://purl.ontochina.org/YYO_0000040 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000040">
+    <owl:Class rdf:about="&ontochina;YYO_0000040">
         <rdfs:label xml:lang="en">process yang entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000015"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000053"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000053"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000041 -->
+    <!-- http://purl.ontochina.org/YYO_0000041 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000041">
+    <owl:Class rdf:about="&ontochina;YYO_0000041">
         <rdfs:label xml:lang="en">material yang entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000040"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000006"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000026"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000026"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000042 -->
+    <!-- http://purl.ontochina.org/YYO_0000042 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000042">
+    <owl:Class rdf:about="&ontochina;YYO_0000042">
         <rdfs:label xml:lang="en">material yin entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000040"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000054"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000054"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000043 -->
+    <!-- http://purl.ontochina.org/YYO_0000043 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000043">
+    <owl:Class rdf:about="&ontochina;YYO_0000043">
         <rdfs:label xml:lang="en">site yin entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000029"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000055"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000055"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000044 -->
+    <!-- http://purl.ontochina.org/YYO_0000044 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000044">
+    <owl:Class rdf:about="&ontochina;YYO_0000044">
         <rdfs:label xml:lang="en">time yin entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000008"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000054"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000054"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000045 -->
+    <!-- http://purl.ontochina.org/YYO_0000045 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000045">
+    <owl:Class rdf:about="&ontochina;YYO_0000045">
         <rdfs:label xml:lang="en">process yin entity</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000015"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+                        <owl:onProperty rdf:resource="&ontochina;YYO_0000007"/>
+                        <owl:someValuesFrom rdf:resource="&ontochina;YYO_0000005"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000055"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000055"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000046 -->
+    <!-- http://purl.ontochina.org/YYO_0000046 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000046">
+    <owl:Class rdf:about="&ontochina;YYO_0000046">
         <rdfs:label xml:lang="en">night time</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000044"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000044"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000047 -->
+    <!-- http://purl.ontochina.org/YYO_0000047 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000047">
+    <owl:Class rdf:about="&ontochina;YYO_0000047">
         <rdfs:label xml:lang="en">day time</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000039"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000039"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000048 -->
+    <!-- http://purl.ontochina.org/YYO_0000048 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000048">
+    <owl:Class rdf:about="&ontochina;YYO_0000048">
         <rdfs:label xml:lang="en">down site</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000043"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000043"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000049 -->
+    <!-- http://purl.ontochina.org/YYO_0000049 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000049">
+    <owl:Class rdf:about="&ontochina;YYO_0000049">
         <rdfs:label xml:lang="en">up site</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000038"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000038"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000050 -->
+    <!-- http://purl.ontochina.org/YYO_0000050 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000050">
+    <owl:Class rdf:about="&ontochina;YYO_0000050">
         <rdfs:label xml:lang="en">outer site</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000038"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000038"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000051 -->
+    <!-- http://purl.ontochina.org/YYO_0000051 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000051">
+    <owl:Class rdf:about="&ontochina;YYO_0000051">
         <rdfs:label xml:lang="en">inner site</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000043"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000043"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000052 -->
+    <!-- http://purl.ontochina.org/YYO_0000052 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000052">
+    <owl:Class rdf:about="&ontochina;YYO_0000052">
         <rdfs:label xml:lang="ch">六十四卦体</rdfs:label>
         <rdfs:label xml:lang="en">64 gua yin-yang entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
@@ -1222,79 +1229,77 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000053 -->
+    <!-- http://purl.ontochina.org/YYO_0000053 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000053">
+    <owl:Class rdf:about="&ontochina;YYO_0000053">
         <rdfs:label xml:lang="en">yang occurrent</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000003"/>
-                    <rdf:Description rdf:about="&obo;YYO_0000002"/>
+                    <rdf:Description rdf:about="&ontochina;YYO_0000002"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000002"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000002"/>
         <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yang entity and occurrent</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000054 -->
+    <!-- http://purl.ontochina.org/YYO_0000054 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000054">
+    <owl:Class rdf:about="&ontochina;YYO_0000054">
         <rdfs:label xml:lang="en">yin continuant</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000002"/>
-                    <rdf:Description rdf:about="&obo;YYO_0000001"/>
+                    <rdf:Description rdf:about="&ontochina;YYO_0000001"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yin entity and continuant</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000001"/>
         <dc:creator>YH</dc:creator>
+        <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yin entity and continuant</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000055 -->
+    <!-- http://purl.ontochina.org/YYO_0000055 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000055">
+    <owl:Class rdf:about="&ontochina;YYO_0000055">
         <rdfs:label xml:lang="en">yin occurrent</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000003"/>
-                    <rdf:Description rdf:about="&obo;YYO_0000001"/>
+                    <rdf:Description rdf:about="&ontochina;YYO_0000001"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000001"/>
-        <dc:creator>YH</dc:creator>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000001"/>
         <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yin entity and occurrent</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000056 -->
+    <!-- http://purl.ontochina.org/YYO_0000056 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000056">
+    <owl:Class rdf:about="&ontochina;YYO_0000056">
         <rdfs:label xml:lang="en">chaotic profile</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000004"/>
-        <dc:creator>YH</dc:creator>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000004"/>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000057 -->
+    <!-- http://purl.ontochina.org/YYO_0000057 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000057">
+    <owl:Class rdf:about="&ontochina;YYO_0000057">
         <rdfs:label xml:lang="ch">五行阴阳相互作用</rdfs:label>
         <rdfs:label xml:lang="en">five xing yin-yang interaction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000003"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000003"/>
         <obo:IAO_0000119 xml:lang="ch">https://en.wikipedia.org/wiki/Wu_Xing</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
@@ -1302,120 +1307,120 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000058 -->
+    <!-- http://purl.ontochina.org/YYO_0000058 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000058">
+    <owl:Class rdf:about="&ontochina;YYO_0000058">
         <rdfs:label xml:lang="ch">火克金</rdfs:label>
         <rdfs:label xml:lang="en">huo ke jin</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000057"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000057"/>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000059 -->
+    <!-- http://purl.ontochina.org/YYO_0000059 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000059">
+    <owl:Class rdf:about="&ontochina;YYO_0000059">
         <rdfs:label xml:lang="ch">火生土</rdfs:label>
         <rdfs:label xml:lang="en">huo sheng tu</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000057"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000057"/>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000060 -->
+    <!-- http://purl.ontochina.org/YYO_0000060 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000060">
+    <owl:Class rdf:about="&ontochina;YYO_0000060">
         <rdfs:label xml:lang="ch">金克木</rdfs:label>
         <rdfs:label xml:lang="en">jin ke mu</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000057"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000057"/>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000061 -->
+    <!-- http://purl.ontochina.org/YYO_0000061 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000061">
+    <owl:Class rdf:about="&ontochina;YYO_0000061">
         <rdfs:label xml:lang="ch">金生水</rdfs:label>
         <rdfs:label xml:lang="en">jin sheng shui</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000057"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000057"/>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000062 -->
+    <!-- http://purl.ontochina.org/YYO_0000062 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000062">
+    <owl:Class rdf:about="&ontochina;YYO_0000062">
         <rdfs:label xml:lang="ch">木克土</rdfs:label>
         <rdfs:label xml:lang="en">mu ke tu</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000057"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000057"/>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000063 -->
+    <!-- http://purl.ontochina.org/YYO_0000063 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000063">
+    <owl:Class rdf:about="&ontochina;YYO_0000063">
         <rdfs:label xml:lang="ch">木生火</rdfs:label>
         <rdfs:label xml:lang="en">mu sheng huo</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000057"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000057"/>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000064 -->
+    <!-- http://purl.ontochina.org/YYO_0000064 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000064">
+    <owl:Class rdf:about="&ontochina;YYO_0000064">
         <rdfs:label xml:lang="ch">水克火</rdfs:label>
         <rdfs:label xml:lang="en">shui ke huo</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000057"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000057"/>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000065 -->
+    <!-- http://purl.ontochina.org/YYO_0000065 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000065">
+    <owl:Class rdf:about="&ontochina;YYO_0000065">
         <rdfs:label xml:lang="ch">水生木</rdfs:label>
         <rdfs:label xml:lang="en">shui sheng mu</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000057"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000057"/>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000066 -->
+    <!-- http://purl.ontochina.org/YYO_0000066 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000066">
+    <owl:Class rdf:about="&ontochina;YYO_0000066">
         <rdfs:label xml:lang="ch">土克水</rdfs:label>
         <rdfs:label xml:lang="en">tu ku shui</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000057"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000057"/>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000067 -->
+    <!-- http://purl.ontochina.org/YYO_0000067 -->
 
-    <owl:Class rdf:about="&obo;YYO_0000067">
+    <owl:Class rdf:about="&ontochina;YYO_0000067">
         <rdfs:label xml:lang="ch">土生金</rdfs:label>
         <rdfs:label xml:lang="en">tu sheng jin</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;YYO_0000057"/>
+        <rdfs:subClassOf rdf:resource="&ontochina;YYO_0000057"/>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
     </owl:Class>
