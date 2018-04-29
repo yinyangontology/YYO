@@ -22,15 +22,33 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;yyo.owl">
-        <dc:date xml:lang="en">2018-03-31</dc:date>
+        <dc:date xml:lang="en">2018-04-29</dc:date>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.08</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.09</owl:versionInfo>
         <dc:description xml:lang="en">YYO is a formal ontology that represents the Yin and Yang and related entities originated in Chinese philosophy.</dc:description>
         <dc:subject xml:lang="en">YYO: A formal ontology about Yin and Yang.</dc:subject>
         <dc:title xml:lang="en">YYO: Yin-Yang Ontology</dc:title>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;yyo/BFO_import.owl"/>
+        <owl:imports rdf:resource="&obo;yyo/IAO_import.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
     
 
 
@@ -187,7 +205,14 @@
     <owl:Class rdf:about="&obo;YYO_0000000">
         <rdfs:label xml:lang="ch">道</rdfs:label>
         <rdfs:label xml:lang="en">dao</rdfs:label>
+        <rdfs:comment>“道生一，一生二，二生三，三生万物。万物负阴而抱阳，冲气以为和。&quot; - 道德经 (Tao Te Ching). 
+Translation: The Dao produced One; One produced Two; Two produced Three; Three produced All things. All things leave behind them the Yin (or translated to Obscurity) (out of which they have come), and go forward to embrace the Yang (or translated to Brightness) (into which they have emerged), while they are harmonised by the Breath of Vacancy.</rdfs:comment>
+        <obo:IAO_0000119 xml:lang="ch">https://ctext.org/dao-de-jing/ens?searchu=%E9%81%93%E7%94%9F%E4%B8%80%EF%BC%8C%E4%B8%80%E7%94%9F%E4%BA%8C%EF%BC%8C%E4%BA%8C%E7%94%9F%E4%B8%89%EF%BC%8C%E4%B8%89%E7%94%9F%E8%90%AC%E7%89%A9%E3%80%82</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">Laozi in the Tao Te Ching explains that the Tao is not a &apos;name&apos; for a &apos;thing&apos; but the underlying natural order of the Universe whose ultimate essence is difficult to circumscribe due to it being non conceptual yet evident&apos; in one&apos;s being of aliveness.</rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">dao (道) is something that is the ultimate cause of an entity.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Tao</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="ch">https://en.wikipedia.org/wiki/Tao_Te_Ching</obo:IAO_0000119>
+        <rdfs:comment xml:lang="ch">阴阳就是道。 系辞传说：“一阴一阳之谓道”、“天之道，曰阴与阳也”，并引用孔子的话：“形而上者谓之道，形而下者谓之器”，所以说儒家认同：“道者，阴阳变化之理也。”道，即宇宙运行，自然变化的法则。</rdfs:comment>
     </owl:Class>
     
 
@@ -210,6 +235,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="ch">An entity that has a yin profile.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -233,6 +259,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="ch">An entity that has a yang profile.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -244,6 +271,7 @@
         <rdfs:label xml:lang="ch">阴阳相互作用</rdfs:label>
         <rdfs:label xml:lang="en">yin-yang interaction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
+        <dc:creator xml:lang="en">YH</dc:creator>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
     </owl:Class>
@@ -255,6 +283,7 @@
     <owl:Class rdf:about="&obo;YYO_0000004">
         <rdfs:label xml:lang="en">yin-yang profile</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
+        <dc:creator>YH</dc:creator>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -265,6 +294,7 @@
     <owl:Class rdf:about="&obo;YYO_0000005">
         <rdfs:label xml:lang="en">yin profile</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000004"/>
+        <dc:creator>YH</dc:creator>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -275,6 +305,7 @@
     <owl:Class rdf:about="&obo;YYO_0000006">
         <rdfs:label xml:lang="en">yang profile</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000004"/>
+        <dc:creator>YH</dc:creator>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -322,6 +353,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang profile at the first yao profile, yang profile at the second yao profile, and yang profile at the third yao profile.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -369,6 +401,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin profile at the first yao profile, yin profile at the second yao profile, and yin profile at the third yao profile.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -378,8 +411,11 @@
 
     <owl:Class rdf:about="&obo;YYO_0000011">
         <rdfs:label xml:lang="ch">五行体</rdfs:label>
-        <rdfs:label xml:lang="en">five xing entity</rdfs:label>
+        <rdfs:label xml:lang="en">wuxing entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
+        <obo:IAO_0000115 xml:lang="ch">an entity that can be described using the Wuxing theory in Chinese philosophy. Based on the theory, an entity can be one of five entities classified based on different levels of yin and yang.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="ch">five xing entity</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="ch">http://www.newworldencyclopedia.org/entry/Wu_Xing</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">&quot;The first two cycles describe the normal order, how things should be. Within the body, this is normal healthy physiology.
 
 The Generation Cycle (Sheng)
@@ -407,20 +443,11 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
 
     <owl:Class rdf:about="&obo;YYO_0000012">
         <rdfs:label xml:lang="ch">八卦体</rdfs:label>
-        <rdfs:label xml:lang="en">eight gua yin-yang entity</rdfs:label>
+        <rdfs:label xml:lang="en">bagua entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="ch">An entity that can be described using the Bagua theory in Chinese philosophy. Such an entity can be represented using 3 hexgram lines (yao), each of which represents a yin or yang entity.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="ch">eight gua yin-yang entity</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="ch">https://en.wikipedia.org/wiki/Bagua</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -446,17 +473,18 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;YYO_0000033"/>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&obo;YYO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="ch">少阴体</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a shao yin profile</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <obo:IAO_0000118 xml:lang="en">metal entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">shao yin entity</obo:IAO_0000118>
@@ -478,8 +506,8 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000032"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000016"/>
+                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&obo;YYO_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -490,11 +518,12 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000029"/>
+                <owl:onProperty rdf:resource="&obo;YYO_0000032"/>
+                <owl:someValuesFrom rdf:resource="&obo;YYO_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="ch">少阳体</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a shao yang profile</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://baike.baidu.com/item/%E5%B0%91%E9%98%B3</obo:IAO_0000119>
         <obo:IAO_0000118 xml:lang="en">shao yang entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">wood entity</obo:IAO_0000118>
@@ -516,12 +545,6 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000032"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000014"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;YYO_0000033"/>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000016"/>
             </owl:Restriction>
@@ -532,7 +555,14 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;YYO_0000032"/>
+                <owl:someValuesFrom rdf:resource="&obo;YYO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="ch">太阴体</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a lao yin profile</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <obo:IAO_0000118 xml:lang="en">lao yin entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">water entity</obo:IAO_0000118>
@@ -554,14 +584,14 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000033"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000013"/>
+                <owl:onProperty rdf:resource="&obo;YYO_0000032"/>
+                <owl:someValuesFrom rdf:resource="&obo;YYO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000032"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000027"/>
+                <owl:onProperty rdf:resource="&obo;YYO_0000033"/>
+                <owl:someValuesFrom rdf:resource="&obo;YYO_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -571,6 +601,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="ch">太阳体</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a lao yang profile</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">fire entity</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://baike.baidu.com/item/%E8%80%81%E9%98%B3</obo:IAO_0000119>
         <obo:IAO_0000118 xml:lang="en">lao yang entity</obo:IAO_0000118>
@@ -621,6 +652,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin profile at the first yao profile, yang profile at the second yao profile, and yang profile at the third yao profile.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -652,12 +684,6 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
             </owl:Restriction>
@@ -668,6 +694,13 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
+                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin profile at the first yao profile, yang profile at the second yao profile, and yin profile at the third yao profile.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -699,12 +732,6 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
             </owl:Restriction>
@@ -715,6 +742,13 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin profile at the first yao profile, yin profile at the second yao profile, and yang profile at the third yao profile.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -752,16 +786,17 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
+                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang profile at the first yao profile, yin profile at the second yao profile, and yin profile at the third yao profile.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -793,12 +828,6 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;YYO_0000019"/>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
             </owl:Restriction>
@@ -809,6 +838,13 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang profile at the first yao profile, yin profile at the second yao profile, and yang profile at the third yao profile.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -846,16 +882,17 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
+                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000018"/>
+                <owl:onProperty rdf:resource="&obo;YYO_0000017"/>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang profile at the first yao profile, yang profile at the second yao profile, and yin profile at the third yao profile.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -874,6 +911,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yang entity and continuant</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -892,12 +930,6 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000056"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;YYO_0000033"/>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000015"/>
             </owl:Restriction>
@@ -908,7 +940,14 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="&obo;YYO_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&obo;YYO_0000056"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="ch">混沌体</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a chaotic profile</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">chaos entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">earth entity</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
@@ -1173,21 +1212,12 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/YYO_0000052 -->
 
     <owl:Class rdf:about="&obo;YYO_0000052">
+        <rdfs:label xml:lang="ch">六十四卦体</rdfs:label>
         <rdfs:label xml:lang="en">64 gua yin-yang entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="ch">An entity that can be described using the 64 gua theory in Chinese philosophy. Such an entity can be represented using 6 hexgram lines (yao), each of which represents a yin or yang entity.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="ch">https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="ch">https://zh.wikipedia.org/wiki/%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1205,6 +1235,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yang entity and occurrent</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1222,6 +1253,8 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yin entity and continuant</obo:IAO_0000115>
+        <dc:creator>YH</dc:creator>
     </owl:Class>
     
 
@@ -1239,6 +1272,8 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000001"/>
+        <dc:creator>YH</dc:creator>
+        <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yin entity and occurrent</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1248,6 +1283,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     <owl:Class rdf:about="&obo;YYO_0000056">
         <rdfs:label xml:lang="en">chaotic profile</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000004"/>
+        <dc:creator>YH</dc:creator>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
     </owl:Class>
     
@@ -1259,6 +1295,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <rdfs:label xml:lang="ch">五行阴阳相互作用</rdfs:label>
         <rdfs:label xml:lang="en">five xing yin-yang interaction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;YYO_0000003"/>
+        <obo:IAO_0000119 xml:lang="ch">https://en.wikipedia.org/wiki/Wu_Xing</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
     </owl:Class>
