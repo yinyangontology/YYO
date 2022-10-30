@@ -79,7 +79,7 @@
     <!-- http://purl.ontochina.org/YYO_0000007 -->
 
     <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000007">
-        <rdfs:label xml:lang="en">has profile</rdfs:label>
+        <rdfs:label xml:lang="en">has characteristic</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -88,7 +88,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000017">
         <rdfs:subPropertyOf rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-        <rdfs:label xml:lang="en">has first yao profile</rdfs:label>
+        <rdfs:label xml:lang="en">has first yao characteristic</rdfs:label>
         <rdfs:label xml:lang="ch">一爻性质</rdfs:label>
     </owl:ObjectProperty>
     
@@ -98,7 +98,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000018">
         <rdfs:subPropertyOf rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-        <rdfs:label xml:lang="en">has second yao profile</rdfs:label>
+        <rdfs:label xml:lang="en">has second yao characteristic</rdfs:label>
         <rdfs:label xml:lang="ch">二爻性质</rdfs:label>
     </owl:ObjectProperty>
     
@@ -108,7 +108,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000019">
         <rdfs:subPropertyOf rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-        <rdfs:label xml:lang="en">has third yao profile</rdfs:label>
+        <rdfs:label xml:lang="en">has third yao characteristic</rdfs:label>
         <rdfs:label xml:lang="ch">三爻性质</rdfs:label>
     </owl:ObjectProperty>
     
@@ -247,7 +247,7 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="ch">An entity that has a yin profile.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="ch">An entity that has a yin characteristic.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <rdfs:label xml:lang="en">yin entity 阴体</rdfs:label>
@@ -272,7 +272,7 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="ch">An entity that has a yang profile.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="ch">An entity that has a yang characteristic.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <rdfs:label xml:lang="en">yang entity 阳体</rdfs:label>
@@ -371,7 +371,7 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang profile at the first yao profile, yang profile at the second yao profile, and yang profile at the third yao profile.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang characteristic at the first yao characteristic, yang characteristic at the second yao characteristic, and yang characteristic at the third yao characteristic.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <rdfs:label xml:lang="en">qian entity 乾体</rdfs:label>
@@ -420,7 +420,7 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin profile at the first yao profile, yin profile at the second yao profile, and yin profile at the third yao profile.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin characteristic at the first yao characteristic, yin characteristic at the second yao characteristic, and yin characteristic at the third yao characteristic.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <rdfs:label xml:lang="en">kun entity 坤体</rdfs:label>
@@ -505,7 +505,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a shao yin profile</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a shao yin characteristic</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">metal entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">shao yin entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="ch">少阴体</obo:IAO_0000118>
@@ -544,7 +544,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a shao yang profile</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a shao yang characteristic</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">shao yang entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">wood entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="ch">少阳体</obo:IAO_0000118>
@@ -583,7 +583,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a lao yin profile</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a lao yin characteristic</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">lao yin entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">water entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="ch">太阴体</obo:IAO_0000118>
@@ -622,7 +622,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a lao yang profile</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a lao yang characteristic</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">fire entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">lao yang entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="ch">太阳体</obo:IAO_0000118>
@@ -674,7 +674,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin profile at the first yao profile, yang profile at the second yao profile, and yang profile at the third yao profile.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin characteristic at the first yao characteristic, yang characteristic at the second yao characteristic, and yang characteristic at the third yao characteristic.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <rdfs:label xml:lang="en">xun entity 巽体</rdfs:label>
@@ -723,7 +723,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin profile at the first yao profile, yang profile at the second yao profile, and yin profile at the third yao profile.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin characteristic at the first yao characteristic, yang characteristic at the second yao characteristic, and yin characteristic at the third yao characteristic.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <rdfs:label xml:lang="en">kan entity 坎体</rdfs:label>
@@ -772,7 +772,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin profile at the first yao profile, yin profile at the second yao profile, and yang profile at the third yao profile.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin characteristic at the first yao characteristic, yin characteristic at the second yao characteristic, and yang characteristic at the third yao characteristic.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <rdfs:label xml:lang="en">gen entity 艮体</rdfs:label>
@@ -821,7 +821,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang profile at the first yao profile, yin profile at the second yao profile, and yin profile at the third yao profile.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang characteristic at the first yao characteristic, yin characteristic at the second yao characteristic, and yin characteristic at the third yao characteristic.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <rdfs:label xml:lang="en">zhen entity 震体</rdfs:label>
@@ -870,7 +870,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang profile at the first yao profile, yin profile at the second yao profile, and yang profile at the third yao profile.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang characteristic at the first yao characteristic, yin characteristic at the second yao characteristic, and yang characteristic at the third yao characteristic.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <rdfs:label xml:lang="en">li entity 离体</rdfs:label>
@@ -919,7 +919,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang profile at the first yao profile, yang profile at the second yao profile, and yin profile at the third yao profile.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang characteristic at the first yao characteristic, yang characteristic at the second yao characteristic, and yin characteristic at the third yao characteristic.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <rdfs:label xml:lang="en">dui entity 兑体</rdfs:label>
@@ -975,7 +975,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a chaotic profile</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a chaotic characteristic</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">chaos entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">earth entity</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="ch">混沌体</obo:IAO_0000118>
