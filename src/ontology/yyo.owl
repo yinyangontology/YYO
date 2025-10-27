@@ -15,12 +15,12 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/yyo/BFO_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/yyo/IAO_import.owl"/>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH) 何勇群</dc:creator>
-        <dc:date xml:lang="en">10-30-2022</dc:date>
+        <dc:date xml:lang="en">10-23-2025</dc:date>
         <dc:description xml:lang="en">YYO is a formal ontology that represents the Yin and Yang and related entities originated in Chinese philosophy.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">YYO: A formal ontology about Yin and Yang.</dc:subject>
         <dc:title xml:lang="en">YYO: Yin-Yang Ontology 阴阳本体</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.9</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.10</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -126,7 +126,7 @@
     <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000032">
         <obo:IAO_0000119 xml:lang="ch">http://m.lnka.cn/detail.aspx?articleId=21&amp;page=100</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">sheng may have different formats, such as gives birth to, promotes the formation of, etc.</rdfs:comment>
-        <rdfs:label xml:lang="en">sheng</rdfs:label>
+        <rdfs:label xml:lang="en">engenders</rdfs:label>
         <rdfs:label xml:lang="ch">生</rdfs:label>
     </owl:ObjectProperty>
     
@@ -137,7 +137,7 @@
     <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000033">
         <obo:IAO_0000119 xml:lang="ch">http://m.lnka.cn/detail.aspx?articleId=21&amp;page=100</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">ke may have different formats, such as controls, inhibits the formation of, etc.</rdfs:comment>
-        <rdfs:label xml:lang="en">ke</rdfs:label>
+        <rdfs:label xml:lang="en">counters</rdfs:label>
         <rdfs:label xml:lang="ch">克</rdfs:label>
     </owl:ObjectProperty>
     
@@ -188,6 +188,24 @@
     
 
 
+    <!-- http://purl.ontochina.org/YYO_0000092 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000092">
+        <obo:IAO_0000118>乘</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">over-restricts</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000093 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000093">
+        <obo:IAO_0000118>侮</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">over-counters</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -199,24 +217,66 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/YYO_0000001 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/YYO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000056"/>
+        <rdfs:label xml:lang="en">Earth characteristic 土特征</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/YYO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/YYO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000029"/>
+        <rdfs:label xml:lang="en">Wood characteristic 木特征</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/YYO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/YYO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000028"/>
+        <rdfs:label xml:lang="en">Fire chacteristic 火特征</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/YYO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/YYO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000031"/>
+        <rdfs:label xml:lang="en">Water characteristic 水特征</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/YYO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/YYO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000030"/>
+        <rdfs:label xml:lang="en">Gold characteristic 金特征</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/YYO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/YYO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000026"/>
+        <rdfs:label xml:lang="en">Water 水</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/COB_0000502 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/COB_0000502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
+    </owl:Class>
     
 
 
@@ -302,26 +362,17 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     
 
 
-    <!-- http://purl.ontochina.org/YYO_0000004 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000069"/>
-        <obo:IAO_0000115>A characteristic that is shown in a yin-yang entity.</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">yin-yang characteristic 阴阳特征</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.ontochina.org/YYO_0000005 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/COB_0000502"/>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>Yin</obo:IAO_0000118>
+        <obo:IAO_0000118>yin characteristic 阴特征</obo:IAO_0000118>
         <obo:IAO_0000118>阴特征</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">yin characteristic</rdfs:label>
+        <obo:IAO_0000232>阴</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">yin 阴</rdfs:label>
     </owl:Class>
     
 
@@ -329,11 +380,21 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000006 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/COB_0000502"/>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>yang characteristic 阳特征</obo:IAO_0000118>
         <obo:IAO_0000118>阳特征</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">yang characteristic 阳特征</rdfs:label>
+        <rdfs:label xml:lang="en">yang 阳</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000042"/>
+        <rdfs:label xml:lang="en">young Yin material entity 少阴物质</rdfs:label>
     </owl:Class>
     
 
@@ -436,43 +497,10 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     
 
 
-    <!-- http://purl.ontochina.org/YYO_0000011 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <obo:IAO_0000115 xml:lang="ch">an entity that can be described using the Wuxing theory in Chinese philosophy. Based on the theory, an entity can be one of five entities classified based on different levels of yin and yang.</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="ch">five xing entity</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">http://acupuncturesydneyclinic.com.au/5-elements/</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">http://m.lnka.cn/detail.aspx?articleId=21&amp;page=100</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="ch">http://www.newworldencyclopedia.org/entry/Wu_Xing</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">&quot;The first two cycles describe the normal order, how things should be. Within the body, this is normal healthy physiology.
-
-The Generation Cycle (Sheng)
-In this sequence there is the mutual generation, or birth, of the phases.
-
-Wood generates (nurtures, produces, gives birth to, is mother of) fire, fire generates earth, earth generates metal, metal generates water, and water generates wood.
-
-It is said that wood provides the fuel for fire; fire produces ashes, that is earth; earth brings forth metal, since metal is dug from the ground; metal brings forth water via condensation, or otherwise it is said that metal produces the minerals in water; water produces plants and trees, that is wood.
-
-The Control Cycle (Ke)
-In this sequence there is mutual control amongst the elements. This maintains balance, preventing any one element from becoming too dominant.
-
-Fire controls metal, metal controls wood, wood controls earth, earth controls water, water controls fire.
-
-Or it can be imagined as, fire melts metal; metal, for example in the form of an axe, cuts wood; wood in the form of tree roots, breaks up earth; earth in the form of an embankment or dam, controls water; water puts out fire.&quot;
-cited from: 
-http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
-        <rdfs:label xml:lang="en">wuxing entity 五行体</rdfs:label>
-        <rdfs:label xml:lang="ch">五行体</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.ontochina.org/YYO_0000012 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000000"/>
         <obo:IAO_0000115 xml:lang="ch">An entity that can be described using the Bagua theory in Chinese philosophy. Such an entity can be represented using 3 hexgram lines (yao), each of which represents a yin or yang entity.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="ch">eight gua yin-yang entity</obo:IAO_0000118>
@@ -480,163 +508,6 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <rdfs:label xml:lang="en">bagua entity 八卦体</rdfs:label>
         <rdfs:label xml:lang="ch">八卦体</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000013 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000013">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000030"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000032"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000033"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000014"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a shao yin characteristic</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">metal entity</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">shao yin entity</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="ch">少阴体</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">jin entity 金体, 少阴体</rdfs:label>
-        <rdfs:label xml:lang="ch">金体</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000014 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000014">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000029"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000029"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000032"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000016"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000033"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a shao yang characteristic</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">shao yang entity</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">wood entity</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="ch">少阳体</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">https://baike.baidu.com/item/%E5%B0%91%E9%98%B3</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">mu entity 木体, 少阳体</rdfs:label>
-        <rdfs:label xml:lang="ch">木体</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000015 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000015">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000031"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000031"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000032"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000014"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000033"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000016"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a lao yin characteristic</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">lao yin entity</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">water entity</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="ch">太阴体</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">shui entity 水体, 太阴体</rdfs:label>
-        <rdfs:label xml:lang="ch">水体</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000016 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000016">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000028"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000028"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000032"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000033"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a lao yang characteristic</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">fire entity</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">lao yang entity</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="ch">太阳体</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">老阳体</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">https://baike.baidu.com/item/%E8%80%81%E9%98%B3</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">huo entity 火体, 老阳体</rdfs:label>
-        <rdfs:label xml:lang="ch">火体</rdfs:label>
     </owl:Class>
     
 
@@ -938,57 +809,8 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     <!-- http://purl.ontochina.org/YYO_0000026 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000026">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
-                    <rdf:Description rdf:about="http://purl.ontochina.org/YYO_0000002"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000002"/>
-        <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yang entity and continuant</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">yang continuant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000027 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000027">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000056"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000056"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000032"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000033"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a chaotic characteristic</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">chaos entity</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">earth entity</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="ch">混沌体</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">tu entity 土体, 混沌体</rdfs:label>
-        <rdfs:label xml:lang="ch">土体</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000042"/>
+        <rdfs:label xml:lang="en">great Yin material entity 太阴物质</rdfs:label>
     </owl:Class>
     
 
@@ -1001,7 +823,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <obo:IAO_0000118>火特征</obo:IAO_0000118>
         <obo:IAO_0000118>老阳特征</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">lao yang characteristic 老阳特征, 火特征</rdfs:label>
+        <rdfs:label xml:lang="en">great Yang 老阳</rdfs:label>
     </owl:Class>
     
 
@@ -1014,7 +836,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <obo:IAO_0000118>少阳特征</obo:IAO_0000118>
         <obo:IAO_0000118>木特征</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">shao yang characteristic 少阳特征, 木特征</rdfs:label>
+        <rdfs:label xml:lang="en">young Yang 少阳</rdfs:label>
     </owl:Class>
     
 
@@ -1027,7 +849,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <obo:IAO_0000118>少阴特征</obo:IAO_0000118>
         <obo:IAO_0000118>金特征</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">shao yin characteristic 少阴特征, 金特征</rdfs:label>
+        <rdfs:label xml:lang="en">young Yin 少阴</rdfs:label>
     </owl:Class>
     
 
@@ -1040,7 +862,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <obo:IAO_0000118>水特征</obo:IAO_0000118>
         <obo:IAO_0000118>老阴特征</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">lao yin characteristic 老阴特征, 水特征</rdfs:label>
+        <rdfs:label xml:lang="en">great Yin 老阴</rdfs:label>
     </owl:Class>
     
 
@@ -1059,7 +881,6 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000026"/>
         <rdfs:label xml:lang="en">site yang entity</rdfs:label>
     </owl:Class>
     
@@ -1119,8 +940,8 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000026"/>
-        <rdfs:label xml:lang="en">material yang entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">Yang material entity 阳物质</rdfs:label>
     </owl:Class>
     
 
@@ -1128,19 +949,8 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     <!-- http://purl.ontochina.org/YYO_0000042 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000042">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000054"/>
-        <rdfs:label xml:lang="en">material yin entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">Ying material entity 阴物质</rdfs:label>
     </owl:Class>
     
 
@@ -1263,7 +1073,7 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     <!-- http://purl.ontochina.org/YYO_0000052 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000052">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000000"/>
         <obo:IAO_0000115 xml:lang="ch">An entity that can be described using the 64 gua theory in Chinese philosophy. Such an entity can be represented using 6 hexgram lines (yao), each of which represents a yin or yang entity.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000118>hexagram entity</obo:IAO_0000118>
@@ -1297,14 +1107,6 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     <!-- http://purl.ontochina.org/YYO_0000054 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000054">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
-                    <rdf:Description rdf:about="http://purl.ontochina.org/YYO_0000001"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000001"/>
         <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yin entity and continuant</obo:IAO_0000115>
         <dc:creator>YH</dc:creator>
@@ -1335,12 +1137,12 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     <!-- http://purl.ontochina.org/YYO_0000056 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000056">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/COB_0000502"/>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000118>土特征</obo:IAO_0000118>
         <obo:IAO_0000118>混沌特征</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">chaotic characteristic 混沌特征, 土特征</rdfs:label>
+        <rdfs:label xml:lang="en">chaotic characteristic 混沌特征</rdfs:label>
     </owl:Class>
     
 
@@ -1492,8 +1294,8 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
     <!-- http://purl.ontochina.org/YYO_0000069 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000069">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">characteristic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000041"/>
+        <rdfs:label xml:lang="en">great Yang material entity 太阳物质</rdfs:label>
     </owl:Class>
     
 
@@ -1564,6 +1366,129 @@ http://acupuncturesydneyclinic.com.au/5-elements/</rdfs:comment>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
         <rdfs:label xml:lang="en">2 坤為地（坤卦）厚德載物</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000077 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000077">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000069"/>
+        <rdfs:label xml:lang="en">Fire 火</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000078 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000078">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000008"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000079 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000079">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000008"/>
+        <rdfs:label xml:lang="en">Gold 金</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000080 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000041"/>
+        <rdfs:label xml:lang="en">young Yang material entity 少阳物质</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000081 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000081">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000080"/>
+        <rdfs:label xml:lang="en">Wood 木</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000082 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000077"/>
+        <rdfs:label xml:lang="en">中医心</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000083 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000083">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000081"/>
+        <rdfs:label xml:lang="en">中医肝</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000087 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">混沌物质</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000088 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000087"/>
+        <rdfs:label xml:lang="en">中医脾</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000090 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/YYO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/YYO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000032"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000083"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000033"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000092"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>TCM kidney</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">中医肾</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000091 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000079"/>
+        <rdfs:label xml:lang="en">中医肺</rdfs:label>
     </owl:Class>
     
 
