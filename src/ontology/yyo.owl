@@ -13,14 +13,13 @@
      xmlns:ontochina="http://purl.ontochina.org/">
     <owl:Ontology rdf:about="http://purl.ontochina.org/yyo.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/yyo/BFO_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/yyo/IAO_import.owl"/>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH) 何勇群</dc:creator>
-        <dc:date xml:lang="en">10-23-2025</dc:date>
+        <dc:date xml:lang="en">11-05-2025</dc:date>
         <dc:description xml:lang="en">YYO is a formal ontology that represents the Yin and Yang and related entities originated in Chinese philosophy.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">YYO: A formal ontology about Yin and Yang.</dc:subject>
         <dc:title xml:lang="en">YYO: Yin-Yang Ontology 阴阳本体</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.10</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -33,6 +32,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     
 
 
@@ -265,8 +270,14 @@
     <!-- http://purl.obolibrary.org/obo/YYO_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/YYO_0000007">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/YYO_0000004"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000026"/>
-        <rdfs:label xml:lang="en">Water 水</rdfs:label>
+        <rdfs:label xml:lang="en">Water characteristic material 水性物质</rdfs:label>
     </owl:Class>
     
 
@@ -393,6 +404,12 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000008 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000008">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000030"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000042"/>
         <rdfs:label xml:lang="en">young Yin material entity 少阴物质</rdfs:label>
     </owl:Class>
@@ -809,6 +826,12 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000026 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000026">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000031"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000042"/>
         <rdfs:label xml:lang="en">great Yin material entity 太阴物质</rdfs:label>
     </owl:Class>
@@ -823,7 +846,7 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
         <obo:IAO_0000118>火特征</obo:IAO_0000118>
         <obo:IAO_0000118>老阳特征</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">great Yang 老阳</rdfs:label>
+        <rdfs:label xml:lang="en">great Yang 太阳</rdfs:label>
     </owl:Class>
     
 
@@ -862,7 +885,7 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
         <obo:IAO_0000118>水特征</obo:IAO_0000118>
         <obo:IAO_0000118>老阴特征</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">great Yin 老阴</rdfs:label>
+        <rdfs:label xml:lang="en">great Yin 太阴</rdfs:label>
     </owl:Class>
     
 
@@ -949,6 +972,12 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000042 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000042">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:label xml:lang="en">Ying material entity 阴物质</rdfs:label>
     </owl:Class>
@@ -1294,6 +1323,12 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000069 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000069">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000028"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000041"/>
         <rdfs:label xml:lang="en">great Yang material entity 太阳物质</rdfs:label>
     </owl:Class>
@@ -1373,16 +1408,14 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000077 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000077">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/YYO_0000003"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000069"/>
-        <rdfs:label xml:lang="en">Fire 火</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000078 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000078">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000008"/>
+        <rdfs:label xml:lang="en">Fire characteristic material 火性物质</rdfs:label>
     </owl:Class>
     
 
@@ -1390,8 +1423,14 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000079 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000079">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/YYO_0000005"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000008"/>
-        <rdfs:label xml:lang="en">Gold 金</rdfs:label>
+        <rdfs:label xml:lang="en">Gold characteristic material 金性物质</rdfs:label>
     </owl:Class>
     
 
@@ -1399,6 +1438,12 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000080 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000080">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000029"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000041"/>
         <rdfs:label xml:lang="en">young Yang material entity 少阳物质</rdfs:label>
     </owl:Class>
@@ -1408,8 +1453,14 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000081 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000081">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/YYO_0000002"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000080"/>
-        <rdfs:label xml:lang="en">Wood 木</rdfs:label>
+        <rdfs:label xml:lang="en">Wood characteristic material 木性物质</rdfs:label>
     </owl:Class>
     
 
@@ -1435,6 +1486,12 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000087 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000087">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000056"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:label xml:lang="en">混沌物质</rdfs:label>
     </owl:Class>
@@ -1454,12 +1511,6 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000090">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/YYO_0000007"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/YYO_0000004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000032"/>
