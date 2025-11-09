@@ -14,12 +14,12 @@
     <owl:Ontology rdf:about="http://purl.ontochina.org/yyo.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/yyo/BFO_import.owl"/>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH) 何勇群</dc:creator>
-        <dc:date xml:lang="en">11-05-2025</dc:date>
+        <dc:date xml:lang="en">11-09-2025</dc:date>
         <dc:description xml:lang="en">YYO is a formal ontology that represents the Yin and Yang and related entities originated in Chinese philosophy.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">YYO: A formal ontology about Yin and Yang.</dc:subject>
         <dc:title xml:lang="en">YYO: Yin-Yang Ontology 阴阳本体</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.11</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1469,7 +1469,9 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000082">
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000077"/>
-        <rdfs:label xml:lang="en">中医心</rdfs:label>
+        <obo:IAO_0000118>TCM Heart</obo:IAO_0000118>
+        <obo:IAO_0000118>中医心</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">TCM Heart 中医心</rdfs:label>
     </owl:Class>
     
 
@@ -1478,7 +1480,9 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000083">
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000081"/>
-        <rdfs:label xml:lang="en">中医肝</rdfs:label>
+        <obo:IAO_0000118>TCM Liver</obo:IAO_0000118>
+        <obo:IAO_0000118>中医肝</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">TCM Liver 中医肝</rdfs:label>
     </owl:Class>
     
 
@@ -1502,7 +1506,9 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000088">
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000087"/>
-        <rdfs:label xml:lang="en">中医脾</rdfs:label>
+        <obo:IAO_0000118>TCM Spleen</obo:IAO_0000118>
+        <obo:IAO_0000118>中医脾</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">TCM Spleen 中医脾</rdfs:label>
     </owl:Class>
     
 
@@ -1530,7 +1536,8 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>TCM kidney</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">中医肾</rdfs:label>
+        <obo:IAO_0000118>中医肾</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">TCM Kidney 中医肾</rdfs:label>
     </owl:Class>
     
 
@@ -1539,7 +1546,9 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000091">
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000079"/>
-        <rdfs:label xml:lang="en">中医肺</rdfs:label>
+        <obo:IAO_0000118>TCM Lung</obo:IAO_0000118>
+        <obo:IAO_0000118>中医肺</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">TCM Lung 中医肺</rdfs:label>
     </owl:Class>
     
 
