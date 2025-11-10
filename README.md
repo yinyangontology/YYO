@@ -7,7 +7,7 @@ Yin and yang are Chinese philosophical concepts referring to two opposite but in
 
 Dr. Yongqun "Oliver" He initiated the development of the YYO during his sabbatical (November 2017 to January 2018) in Monash University, Australia. He later presented a preliminary version of the Yin-Yang ontological modeling at the 14th Annual Meeting of the Information Branch of the Professional Committee of the China Association of Integrative Medicine, held in Jining, Shandong Province, from October 12th to 15th, 2023. 
 
-Oliver presented an oral presentation titled "Logic-based Yin-Yang Ontology: Top-level Design for Integrating Traditional Chinese and Western Medicine" on November 9, 2025, in the 16th International Conference on Biological and Biomedical Ontology ([ICBO 2025](https://icbo-conference.github.io/icbo2025/program/)).  
+Oliver presented an oral presentation titled "Logic-based Yin-Yang Ontology: Top-level Design for Integrating Traditional Chinese and Western Medicine" on November 9, 2025, in [ICBO 2025](https://icbo-conference.github.io/icbo2025/program/) - the 16th International Conference on Biological and Biomedical Ontology.  
 
 
 ## References: 
