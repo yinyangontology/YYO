@@ -13,12 +13,12 @@
      xmlns:ontochina="http://purl.ontochina.org/">
     <owl:Ontology rdf:about="http://purl.ontochina.org/yyo.owl">
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH) 何勇群</dc:creator>
-        <dc:date xml:lang="en">11-09-2025</dc:date>
+        <dc:date xml:lang="en">11-10-2025</dc:date>
         <dc:description xml:lang="en">YYO is a formal ontology that represents the Yin and Yang and related entities originated in Chinese philosophy.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <dc:subject xml:lang="en">YYO: A formal ontology about Yin and Yang.</dc:subject>
+        <dc:subject xml:lang="en">YYO: A formal ontology in the domain of Yin and Yang.</dc:subject>
         <dc:title xml:lang="en">YYO: Yin-Yang Ontology 阴阳本体</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.12</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -86,7 +86,10 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <obo:IAO_0000115>Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
+        <rdfs:label>term editor</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -235,6 +238,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <obo:IAO_0000115>A relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000005 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000005">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:label xml:lang="en">has output participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.ontochina.org/YYO_0000007 -->
 
     <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000007">
@@ -243,32 +264,11 @@
     
 
 
-    <!-- http://purl.ontochina.org/YYO_0000017 -->
+    <!-- http://purl.ontochina.org/YYO_0000015 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000017">
-        <rdfs:subPropertyOf rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-        <rdfs:label xml:lang="en">has first yao characteristic</rdfs:label>
-        <rdfs:label xml:lang="ch">一爻性质</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000018 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000018">
-        <rdfs:subPropertyOf rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-        <rdfs:label xml:lang="en">has second yao characteristic</rdfs:label>
-        <rdfs:label xml:lang="ch">二爻性质</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000019 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000019">
-        <rdfs:subPropertyOf rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-        <rdfs:label xml:lang="en">has third yao characteristic</rdfs:label>
-        <rdfs:label xml:lang="ch">三爻性质</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000015">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:label xml:lang="en">has input participant</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -276,8 +276,11 @@
     <!-- http://purl.ontochina.org/YYO_0000032 -->
 
     <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000032">
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>Sheng</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="ch">http://m.lnka.cn/detail.aspx?articleId=21&amp;page=100</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">sheng may have different formats, such as gives birth to, promotes the formation of, etc.</rdfs:comment>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Wuxing_(Chinese_philosophy)</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">Sheng may have different formats, such as gives birth to, promotes the formation of, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">engenders</rdfs:label>
         <rdfs:label xml:lang="ch">生</rdfs:label>
     </owl:ObjectProperty>
@@ -287,7 +290,9 @@
     <!-- http://purl.ontochina.org/YYO_0000033 -->
 
     <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000033">
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="ch">http://m.lnka.cn/detail.aspx?articleId=21&amp;page=100</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Wuxing_(Chinese_philosophy)</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">ke may have different formats, such as controls, inhibits the formation of, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">counters</rdfs:label>
         <rdfs:label xml:lang="ch">克</rdfs:label>
@@ -295,55 +300,13 @@
     
 
 
-    <!-- http://purl.ontochina.org/YYO_0000034 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000034">
-        <rdfs:subPropertyOf rdf:resource="http://purl.ontochina.org/YYO_0000033"/>
-        <rdfs:label xml:lang="en">inhibits formation of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000035 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000035">
-        <rdfs:subPropertyOf rdf:resource="http://purl.ontochina.org/YYO_0000032"/>
-        <rdfs:label xml:lang="en">promotes formation of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000036 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000036">
-        <rdfs:subPropertyOf rdf:resource="http://purl.ontochina.org/YYO_0000033"/>
-        <rdfs:label xml:lang="en">controls</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000037 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000037">
-        <rdfs:subPropertyOf rdf:resource="http://purl.ontochina.org/YYO_0000032"/>
-        <rdfs:label xml:lang="en">give birth to</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000068 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000068">
-        <rdfs:comment>This term may come from RO.</rdfs:comment>
-        <rdfs:label xml:lang="en">has participant</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.ontochina.org/YYO_0000092 -->
 
     <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000092">
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>overacts</obo:IAO_0000118>
         <obo:IAO_0000118>乘</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Wuxing_(Chinese_philosophy)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">over-restricts</rdfs:label>
     </owl:ObjectProperty>
     
@@ -352,7 +315,10 @@
     <!-- http://purl.ontochina.org/YYO_0000093 -->
 
     <owl:ObjectProperty rdf:about="http://purl.ontochina.org/YYO_0000093">
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>counteracts</obo:IAO_0000118>
         <obo:IAO_0000118>侮</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Wuxing_(Chinese_philosophy)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">over-counters</rdfs:label>
     </owl:ObjectProperty>
     
@@ -535,24 +501,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <obo:BFO_0000179>gdc</obo:BFO_0000179>
-        <obo:BFO_0000180>GenericallyDependentContinuant</obo:BFO_0000180>
-        <obo:IAO_0000112 xml:lang="en">The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity.</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the pdf file on your laptop, the pdf file that is a copy thereof on my laptop</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <obo:IAO_0000602>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </obo:IAO_0000602>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038">
@@ -639,89 +587,21 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/YYO_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/YYO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000056"/>
-        <rdfs:label xml:lang="en">Earth characteristic 土特征</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/YYO_0000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/YYO_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000029"/>
-        <rdfs:label xml:lang="en">Wood characteristic 木特征</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/YYO_0000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/YYO_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000028"/>
-        <rdfs:label xml:lang="en">Fire chacteristic 火特征</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/YYO_0000004 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/YYO_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000031"/>
-        <rdfs:label xml:lang="en">Water characteristic 水特征</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/YYO_0000005 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/YYO_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000030"/>
-        <rdfs:label xml:lang="en">Gold characteristic 金特征</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/YYO_0000007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/YYO_0000007">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/YYO_0000004"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000026"/>
-        <rdfs:label xml:lang="en">Water characteristic material 水性物质</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/COB_0000502 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/COB_0000502">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">characteristic</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.ontochina.org/YYO_0000000 -->
+    <!-- http://purl.obolibrary.org/obo/INO_0000002 -->
 
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000000">
-        <obo:IAO_0000115 xml:lang="en">dao (道) is something that is the ultimate cause of an entity.</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="ch">https://ctext.org/dao-de-jing/ens?searchu=%E9%81%93%E7%94%9F%E4%B8%80%EF%BC%8C%E4%B8%80%E7%94%9F%E4%BA%8C%EF%BC%8C%E4%BA%8C%E7%94%9F%E4%B8%89%EF%BC%8C%E4%B8%89%E7%94%9F%E8%90%AC%E7%89%A9%E3%80%82</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Tao</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="ch">https://en.wikipedia.org/wiki/Tao_Te_Ching</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Laozi in the Tao Te Ching explains that the Tao is not a &apos;name&apos; for a &apos;thing&apos; but the underlying natural order of the Universe whose ultimate essence is difficult to circumscribe due to it being non conceptual yet evident&apos; in one&apos;s being of aliveness.</rdfs:comment>
-        <rdfs:comment>“道生一，一生二，二生三，三生万物。万物负阴而抱阳，冲气以为和。&quot; - 道德经 (Tao Te Ching). 
-Translation: The Dao produced One; One produced Two; Two produced Three; Three produced All things. All things leave behind them the Yin (or translated to Obscurity) (out of which they have come), and go forward to embrace the Yang (or translated to Brightness) (into which they have emerged), while they are harmonised by the Breath of Vacancy.</rdfs:comment>
-        <rdfs:comment xml:lang="ch">阴阳就是道。 系辞传说：“一阴一阳之谓道”、“天之道，曰阴与阳也”，并引用孔子的话：“形而上者谓之道，形而下者谓之器”，所以说儒家认同：“道者，阴阳变化之理也。”道，即宇宙运行，自然变化的法则。</rdfs:comment>
-        <rdfs:label xml:lang="en">dao 道</rdfs:label>
-        <rdfs:label xml:lang="ch">道</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>Interaction is a processual entity that has two or more participants (i.e., interactors) that have an effect upon one another.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">interaction</rdfs:label>
     </owl:Class>
     
 
@@ -729,24 +609,15 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000001 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000001">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="ch">An entity that has a yin characteristic.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <obo:IAO_0000115>A characteristic that is retractive, passive, contractive and receptive in nature.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>Yin</obo:IAO_0000118>
+        <obo:IAO_0000118>Yin characteristic</obo:IAO_0000118>
+        <obo:IAO_0000118>阴特征</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">yin entity 阴体</rdfs:label>
-        <rdfs:label xml:lang="ch">阴体</rdfs:label>
+        <obo:IAO_0000232>阴</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">Yin 阴</rdfs:label>
     </owl:Class>
     
 
@@ -754,24 +625,14 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000002 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000002">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="ch">An entity that has a yang characteristic.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <obo:IAO_0000115>A characteristic that is repelling, active, expansive and repulsive in nature.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>Yang characteristic 阳特征</obo:IAO_0000118>
+        <obo:IAO_0000118>阳</obo:IAO_0000118>
+        <obo:IAO_0000118>阳特征</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">yang entity 阳体</rdfs:label>
-        <rdfs:label xml:lang="ch">阳体</rdfs:label>
+        <rdfs:label xml:lang="en">Yang 阳</rdfs:label>
     </owl:Class>
     
 
@@ -779,28 +640,54 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000003 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000070"/>
-        <obo:IAO_0000115>An interaction between yin and yang entities</obo:IAO_0000115>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000041"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000042"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An interaction between Yin and Yang charactistic material entities</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>Yin-Yang interaction</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">yin-yang interaction 阴阳相互作用</rdfs:label>
+        <rdfs:label xml:lang="en">Yin-Yang interaction 阴阳相互作用</rdfs:label>
         <rdfs:label xml:lang="ch">阴阳相互作用</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.ontochina.org/YYO_0000005 -->
+    <!-- http://purl.ontochina.org/YYO_0000004 -->
 
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/COB_0000502"/>
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <obo:IAO_0000115>A characteristic that is in a Chaos status, not as Yin or Yang.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000118>Yin</obo:IAO_0000118>
-        <obo:IAO_0000118>yin characteristic 阴特征</obo:IAO_0000118>
-        <obo:IAO_0000118>阴特征</obo:IAO_0000118>
+        <obo:IAO_0000118>土特征</obo:IAO_0000118>
+        <obo:IAO_0000118>混沌特征</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <obo:IAO_0000232>阴</obo:IAO_0000232>
-        <rdfs:label xml:lang="en">yin 阴</rdfs:label>
+        <rdfs:label xml:lang="en">Chaos characteristic 混沌特征</rdfs:label>
     </owl:Class>
     
 
@@ -808,12 +695,10 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000006 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/COB_0000502"/>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000118>yang characteristic 阳特征</obo:IAO_0000118>
-        <obo:IAO_0000118>阳特征</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">yang 阳</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000030"/>
+        <rdfs:label xml:lang="en">Earth characteristic 土特征</rdfs:label>
+        <rdfs:label xml:lang="en">Metal characteristic 金特征</rdfs:label>
     </owl:Class>
     
 
@@ -828,6 +713,8 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000042"/>
+        <obo:IAO_0000118>young Yin material entity</obo:IAO_0000118>
+        <obo:IAO_0000118>少阴物质</obo:IAO_0000118>
         <rdfs:label xml:lang="en">young Yin material entity 少阴物质</rdfs:label>
     </owl:Class>
     
@@ -836,48 +723,8 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000009 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000009">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang characteristic at the first yao characteristic, yang characteristic at the second yao characteristic, and yang characteristic at the third yao characteristic.</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">qian entity 乾体</rdfs:label>
-        <rdfs:label xml:lang="ch">乾体</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000028"/>
+        <rdfs:label xml:lang="en">Fire chacteristic 火特征</rdfs:label>
     </owl:Class>
     
 
@@ -885,48 +732,19 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000010 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000010">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin characteristic at the first yao characteristic, yin characteristic at the second yao characteristic, and yin characteristic at the third yao characteristic.</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">kun entity 坤体</rdfs:label>
-        <rdfs:label xml:lang="ch">坤体</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000029"/>
+        <obo:IAO_0000115>Wood characteristic</obo:IAO_0000115>
+        <obo:IAO_0000115>木特征</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Wood characteristic 木特征</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.ontochina.org/YYO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000031"/>
+        <rdfs:label xml:lang="en">Water characteristic 水特征</rdfs:label>
     </owl:Class>
     
 
@@ -934,308 +752,70 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000012 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000012">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000000"/>
-        <obo:IAO_0000115 xml:lang="ch">An entity that can be described using the Bagua theory in Chinese philosophy. Such an entity can be represented using 3 hexgram lines (yao), each of which represents a yin or yang entity.</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="ch">eight gua yin-yang entity</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="ch">https://en.wikipedia.org/wiki/Bagua</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">bagua entity 八卦体</rdfs:label>
-        <rdfs:label xml:lang="ch">八卦体</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000011"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000026"/>
+        <obo:IAO_0000118>Water characteristic material</obo:IAO_0000118>
+        <obo:IAO_0000118>水性物质</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">Water characteristic material 水性物质</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.ontochina.org/YYO_0000020 -->
+    <!-- http://purl.ontochina.org/YYO_0000013 -->
 
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000020">
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000013">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
+                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000077"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
+                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000015"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000081"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000063"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000015"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000081"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin characteristic at the first yao characteristic, yang characteristic at the second yao characteristic, and yang characteristic at the third yao characteristic.</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">xun entity 巽体</rdfs:label>
-        <rdfs:label xml:lang="ch">巽体</rdfs:label>
+        <obo:IAO_0000118>Wood engendering Fire</obo:IAO_0000118>
+        <obo:IAO_0000118>木生火</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Wood engendering Fire 木生火</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.ontochina.org/YYO_0000021 -->
+    <!-- http://purl.ontochina.org/YYO_0000014 -->
 
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000021">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin characteristic at the first yao characteristic, yang characteristic at the second yao characteristic, and yin characteristic at the third yao characteristic.</obo:IAO_0000115>
+    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000013"/>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">kan entity 坎体</rdfs:label>
-        <rdfs:label xml:lang="ch">坎体</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000022 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000022">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yin characteristic at the first yao characteristic, yin characteristic at the second yao characteristic, and yang characteristic at the third yao characteristic.</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">gen entity 艮体</rdfs:label>
-        <rdfs:label xml:lang="ch">艮体</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000023">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang characteristic at the first yao characteristic, yin characteristic at the second yao characteristic, and yin characteristic at the third yao characteristic.</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">zhen entity 震体</rdfs:label>
-        <rdfs:label xml:lang="ch">震体</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000024 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000024">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang characteristic at the first yao characteristic, yin characteristic at the second yao characteristic, and yang characteristic at the third yao characteristic.</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">li entity 离体</rdfs:label>
-        <rdfs:label xml:lang="ch">离体</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000025 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000025">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000017"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000018"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000019"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An bagua entity that has a yang characteristic at the first yao characteristic, yang characteristic at the second yao characteristic, and yin characteristic at the third yao characteristic.</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">dui entity 兑体</rdfs:label>
-        <rdfs:label xml:lang="ch">兑体</rdfs:label>
+        <obo:IAO_0000118>TCM Liver engendering Heart</obo:IAO_0000118>
+        <obo:IAO_0000118>中医肝生心</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">TCM Liver engendering Heart 中医肝生心</rdfs:label>
     </owl:Class>
     
 
@@ -1250,6 +830,8 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000042"/>
+        <obo:IAO_0000118>great Yin material entity</obo:IAO_0000118>
+        <obo:IAO_0000118>太阴物质</obo:IAO_0000118>
         <rdfs:label xml:lang="en">great Yin material entity 太阴物质</rdfs:label>
     </owl:Class>
     
@@ -1258,7 +840,7 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000028 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000028">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000002"/>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000118>火特征</obo:IAO_0000118>
         <obo:IAO_0000118>老阳特征</obo:IAO_0000118>
@@ -1271,10 +853,10 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000029 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000029">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000002"/>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000118>少阳特征</obo:IAO_0000118>
-        <obo:IAO_0000118>木特征</obo:IAO_0000118>
+        <obo:IAO_0000118>young Yang</obo:IAO_0000118>
+        <obo:IAO_0000118>少阳</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <rdfs:label xml:lang="en">young Yang 少阳</rdfs:label>
     </owl:Class>
@@ -1284,7 +866,7 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000030 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000030">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000001"/>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000118>少阴特征</obo:IAO_0000118>
         <obo:IAO_0000118>金特征</obo:IAO_0000118>
@@ -1297,71 +879,12 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000031 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000031">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000001"/>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000118>水特征</obo:IAO_0000118>
         <obo:IAO_0000118>老阴特征</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
         <rdfs:label xml:lang="en">great Yin 太阴</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000038 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000038">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label xml:lang="en">site yang entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000039 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000039">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000008"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000053"/>
-        <rdfs:label xml:lang="en">time yang entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000040 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000040">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000053"/>
-        <rdfs:label xml:lang="en">process yang entity</rdfs:label>
     </owl:Class>
     
 
@@ -1375,12 +898,14 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000118>Yang material entity</obo:IAO_0000118>
+        <obo:IAO_0000118>阳物质</obo:IAO_0000118>
         <rdfs:label xml:lang="en">Yang material entity 阳物质</rdfs:label>
     </owl:Class>
     
@@ -1392,282 +917,13 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000001"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:label xml:lang="en">Ying material entity 阴物质</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000043 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000043">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000055"/>
-        <rdfs:label xml:lang="en">site yin entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000044 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000044">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000008"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000054"/>
-        <rdfs:label xml:lang="en">time yin entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000045 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000045">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000055"/>
-        <rdfs:label xml:lang="en">process yin entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000046 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000046">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000044"/>
-        <rdfs:label xml:lang="en">night yin time</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000047 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000047">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000039"/>
-        <rdfs:label xml:lang="en">day yang time</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000048 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000048">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000043"/>
-        <rdfs:label xml:lang="en">down yin site</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000049 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000049">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000038"/>
-        <rdfs:label xml:lang="en">up yang site</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000050 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000050">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000038"/>
-        <rdfs:label xml:lang="en">outer yang site</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000051 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000051">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000043"/>
-        <obo:IAO_0000118>inner site</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">inner yin site</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000052 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000052">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000000"/>
-        <obo:IAO_0000115 xml:lang="ch">An entity that can be described using the 64 gua theory in Chinese philosophy. Such an entity can be represented using 6 hexgram lines (yao), each of which represents a yin or yang entity.</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000118>hexagram entity</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="ch">https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="ch">https://zh.wikipedia.org/wiki/%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">64 gua yin-yang entity 六十四卦体</rdfs:label>
-        <rdfs:label xml:lang="ch">六十四卦体</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000053 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000053">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
-                    <rdf:Description rdf:about="http://purl.ontochina.org/YYO_0000002"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000002"/>
-        <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yang entity and occurrent</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">yang occurrent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000054 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000054">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yin entity and continuant</obo:IAO_0000115>
-        <dc:creator>YH</dc:creator>
-        <rdfs:label xml:lang="en">yin continuant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000055 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000055">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
-                    <rdf:Description rdf:about="http://purl.ontochina.org/YYO_0000001"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">A crossproduct betweenn yin entity and occurrent</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">yin occurrent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000056 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000056">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/COB_0000502"/>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000118>土特征</obo:IAO_0000118>
-        <obo:IAO_0000118>混沌特征</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Yin_and_yang</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">chaotic characteristic 混沌特征</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000057 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000057">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000003"/>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="ch">https://en.wikipedia.org/wiki/Wu_Xing</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">five xing yin-yang interaction 五行阴阳相互作用</rdfs:label>
-        <rdfs:label xml:lang="ch">五行阴阳相互作用</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000058 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000058">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000057"/>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">huo ke jin 火克金，老阳克少阴</rdfs:label>
-        <rdfs:label xml:lang="ch">火克金</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000059 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000059">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000057"/>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">huo sheng tu 火生土，老阳生混沌</rdfs:label>
-        <rdfs:label xml:lang="ch">火生土</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000060 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000060">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000057"/>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">jin ke mu 金克木，少阴克少阳</rdfs:label>
-        <rdfs:label xml:lang="ch">金克木</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000061 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000061">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000057"/>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">jin sheng shui 金生水， 少阴生老阴</rdfs:label>
-        <rdfs:label xml:lang="ch">金生水</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000062 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000062">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000057"/>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">mu ke tu 木克土，少阳克混沌</rdfs:label>
-        <rdfs:label xml:lang="ch">木克土</rdfs:label>
+        <obo:IAO_0000118>Yin material entity</obo:IAO_0000118>
+        <obo:IAO_0000118>阴物质</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">Yin material entity 阴物质</rdfs:label>
     </owl:Class>
     
 
@@ -1675,64 +931,39 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000063 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000063">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000057"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000069"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000015"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000080"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000005"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000069"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000015"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000080"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>young Yang engendering great Yang</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">mu sheng huo 木生火， 少阳生老阳</rdfs:label>
-        <rdfs:label xml:lang="ch">木生火</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000064 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000064">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000057"/>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">shui ke huo 水克火，老阴克老阳</rdfs:label>
-        <rdfs:label xml:lang="ch">水克火</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000065 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000065">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000057"/>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">shui sheng mu 水生木， 老阴生少阳</rdfs:label>
-        <rdfs:label xml:lang="ch">水生木</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000066 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000066">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000057"/>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">tu ku shui 土克水，混沌克老阴</rdfs:label>
-        <rdfs:label xml:lang="ch">土克水</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000067 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000067">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000057"/>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmbasics.com/basics_yinyang_theory.htm</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">http://www.tcmwindow.com/theory/yinyang/Interaction-Between-Yin-and-Yang.shtml</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">tu sheng jin 土生金，混沌生少阴</rdfs:label>
-        <rdfs:label xml:lang="ch">土生金</rdfs:label>
+        <rdfs:label xml:lang="en">young Yang engendering great Yang 少阳生老阳</rdfs:label>
+        <rdfs:label xml:lang="ch">少阳生老阳</rdfs:label>
     </owl:Class>
     
 
@@ -1747,77 +978,9 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000041"/>
+        <obo:IAO_0000118>great Yang material entity</obo:IAO_0000118>
+        <obo:IAO_0000118>太阳物质</obo:IAO_0000118>
         <rdfs:label xml:lang="en">great Yang material entity 太阳物质</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000070 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000070">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">interaction</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000071 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000071">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">data</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000072 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000072">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000071"/>
-        <obo:IAO_0000115>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">yao line 爻</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000073 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000073">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000072"/>
-        <rdfs:label xml:lang="en">yang yao line 阳爻</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000074 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000074">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000072"/>
-        <rdfs:label xml:lang="en">yin yao line 阴爻</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000075 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000075">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">1 乾為天（乾卦）自強不息</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000076 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000076">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">2 坤為地（坤卦）厚德載物</rdfs:label>
     </owl:Class>
     
 
@@ -1828,10 +991,12 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/YYO_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000009"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000069"/>
+        <obo:IAO_0000118>Fire characteristic material</obo:IAO_0000118>
+        <obo:IAO_0000118>火性物质</obo:IAO_0000118>
         <rdfs:label xml:lang="en">Fire characteristic material 火性物质</rdfs:label>
     </owl:Class>
     
@@ -1843,11 +1008,13 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/YYO_0000005"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000006"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000008"/>
-        <rdfs:label xml:lang="en">Gold characteristic material 金性物质</rdfs:label>
+        <obo:IAO_0000118>Metal characteristic material</obo:IAO_0000118>
+        <obo:IAO_0000118>金性物质</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">Metal characteristic material 金性物质</rdfs:label>
     </owl:Class>
     
 
@@ -1862,6 +1029,8 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000041"/>
+        <obo:IAO_0000118>young Yang material entity</obo:IAO_0000118>
+        <obo:IAO_0000118>少阳物质</obo:IAO_0000118>
         <rdfs:label xml:lang="en">young Yang material entity 少阳物质</rdfs:label>
     </owl:Class>
     
@@ -1873,10 +1042,12 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/YYO_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000010"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000080"/>
+        <obo:IAO_0000118>Wood characteristic material</obo:IAO_0000118>
+        <obo:IAO_0000118>木性物质</obo:IAO_0000118>
         <rdfs:label xml:lang="en">Wood characteristic material 木性物质</rdfs:label>
     </owl:Class>
     
@@ -1910,11 +1081,13 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.ontochina.org/YYO_0000004"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:label xml:lang="en">混沌物质</rdfs:label>
+        <obo:IAO_0000118>Chaos characteristic material</obo:IAO_0000118>
+        <obo:IAO_0000118>混沌物质</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">Chaos characteristic material 混沌物质</rdfs:label>
     </owl:Class>
     
 
@@ -1933,7 +1106,7 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     <!-- http://purl.ontochina.org/YYO_0000090 -->
 
     <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000090">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/YYO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.ontochina.org/YYO_0000032"/>
@@ -1970,750 +1143,6 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
     
 
 
-    <!-- http://purl.ontochina.org/YYO_0000094 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000094">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">3 水雷屯（屯卦）起始維艱</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000095 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000095">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">4 山水蒙（蒙卦）啓蒙奮發</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000096 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000096">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">5 水天需（需卦）守正待機</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000097 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000097">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">6 天水訟（訟卦）慎爭戒訟</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000098 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000098">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">7 地水師（師卦）行險而順</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000099 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000099">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">8 水地比（比卦）誠信團結</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000100 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000100">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">9 風天小畜（小畜卦）蓄養待進</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000101 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000101">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">10 天澤履（履卦）腳踏實地</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000102 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000102">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">11 地天泰（泰卦）應時而變</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000103 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000103">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">12 天地否(pǐ)（否卦）不交不通</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000104 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000104">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">13 天火同人（同人卦）上下和同</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000105 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000105">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">14 火天大有（大有卦）順天依時</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000106 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000106">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">15 地山謙（謙卦）內高外低</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000107 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000107">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">16 雷地豫（豫卦）順時依勢</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000108 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000108">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">17 澤雷隨（隨卦）隨時變通</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000109 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000109">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">18 山風蠱（蠱卦）振疲起衰</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000110 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000110">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">19 地澤臨（臨卦）教民保民</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000111 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000111">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">20 風地觀（觀卦）觀下瞻上</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000112 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000112">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">21 火雷噬嗑（噬嗑卦）剛柔相濟</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000113 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000113">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">22 山火賁（賁卦）飾外揚質</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000114 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000114">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">23 山地剝（剝卦）順勢而止</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000115 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000115">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">24 地雷復（復卦）寓動於順</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000116 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000116">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">25 天雷無妄（無妄卦）無妄而得</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000117 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000117">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">26 山天大畜（大畜卦）止而不止</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000118 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000118">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">27 山雷頤（頤卦）純正以養</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000119 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000119">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">28 澤風大過（大過卦）非常行動</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000120 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000120">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">29 坎為水（坎卦）行險用險</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000121 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000121">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">30 離為火（離卦）附和依託</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000122 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000122">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">31 澤山鹹（鹹卦）相互感應</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000123 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000123">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">32 雷風恆（恆卦）恆心有成</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000124 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000124">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">33 天山遁（遁卦）遁世救世</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000125 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000125">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">34 雷天大壯（大壯卦）壯勿妄動</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000126 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000126">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">35 火地晉（晉卦）求進發展</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000127 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000127">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">36 地火明夷（明夷卦）晦而轉明</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000128 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000128">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">37 風火家人（家人卦）誠威治業</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000129 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000129">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">38 火澤睽（睽卦）異中求同</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000130 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000130">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">39 水山蹇（蹇卦）險阻在前</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000131 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000131">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">40 雷水解（解卦）柔道致治</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000132 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000132">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">41 山澤損（損卦）損益制衡</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000133 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000133">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">42 風雷益（益卦）損上益下</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000134 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000134">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">43 澤天夬 （夬卦） 決而能和</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000135 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000135">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">44 天風姤（姤卦） 天下有風</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000136 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000136">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">45 澤地萃（萃卦）薈萃聚集</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000137 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000137">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">46 地風升（升卦）柔順謙虛</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000138 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000138">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">47 澤水困（困卦）困境求通</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000139 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000139">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">48 水風井（井卦）求賢若渴</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000140 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000140">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">49 澤火革（革卦）順天應人</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000141 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000141">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">50 火風鼎（鼎卦）穩重圖變</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000142 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000142">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">51 震為雷（震卦）臨危不亂</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000143 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000143">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">52 艮為山（艮卦）動靜適時</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000144 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000144">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">53 風山漸（漸卦）漸進蓄德</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000145 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000145">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">54 雷澤歸妹（歸妹卦）立家興業</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000146 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000146">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">55 雷火豐（豐卦）日中則斜</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000147 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000147">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">56 火山旅（旅卦）依義順時</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000148 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000148">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">57 巽為風（巽卦）謙遜受益</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000149 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000149">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">58 兑為澤（澤卦）剛內柔外</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000150 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000150">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">59 風水渙（渙卦）拯救渙散</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000151 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000151">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">60 水澤節（節卦）萬物有節</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000152 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000152">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">61 風澤中孚（中孚卦）誠信立身</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000153 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000153">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">62 雷山小過（小過卦）行動有度</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000154 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000154">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">63 水火既濟（既濟卦）盛極將衰</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.ontochina.org/YYO_0000155 -->
-
-    <owl:Class rdf:about="http://purl.ontochina.org/YYO_0000155">
-        <rdfs:subClassOf rdf:resource="http://purl.ontochina.org/YYO_0000052"/>
-        <obo:IAO_0000119>https://baike.baidu.hk/item/%E6%98%93%E7%B6%93%E5%85%AD%E5%8D%81%E5%9B%9B%E5%8D%A6</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hexagram_(I_Ching)</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">64 火水未濟（未濟卦）事業未竟</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2730,8 +1159,8 @@ Translation: The Dao produced One; One produced Two; Two produced Three; Three p
         <dc:contributor>Pierre Grenon</dc:contributor>
         <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/2014-05-03/ReleaseNotes"/>
         <dc:contributor>Werner Ceusters</dc:contributor>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/2014-05-03/ReleaseNotes"/>
         <dc:contributor>Jie Zheng</dc:contributor>
         <dc:contributor>Thomas Bittner</dc:contributor>
         <dc:contributor>Mathias Brochhausen</dc:contributor>
@@ -2744,20 +1173,20 @@ If you plan to use the relations that define BFO 2, you should import bfo.owl in
 See the BFO 2 release notes for further information about BFO 2. Please note that the current release of bfo.owl uses temporal relations when the subject or object is a continuant, a major change from BFO 1.</rdfs:comment>
         <dc:contributor>Melanie Courtot</dc:contributor>
         <dc:contributor>Bjoern Peters</dc:contributor>
-        <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
-        <obo:IAO_0000116>BFO 2 Reference: BFO does not claim to be a complete coverage of all entities. It seeks only to provide coverage of those entities studied by empirical science together with those entities which affect or are involved in human activities such as data processing and planning – coverage that is sufficiently broad to provide assistance to those engaged in building domain ontologies for purposes of data annotation [17</obo:IAO_0000116>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
+        <obo:IAO_0000116>BFO 2 Reference: BFO does not claim to be a complete coverage of all entities. It seeks only to provide coverage of those entities studied by empirical science together with those entities which affect or are involved in human activities such as data processing and planning – coverage that is sufficiently broad to provide assistance to those engaged in building domain ontologies for purposes of data annotation [17</obo:IAO_0000116>
+        <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
         <dc:contributor>Robert Rovetto</dc:contributor>
         <dc:contributor>James A. Overton</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/2012-07-20/Reference"/>
         <dc:contributor>Jonathan Bona</dc:contributor>
-        <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
         <dc:contributor>Fabian Neuhaus</dc:contributor>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
+        <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
         <dc:contributor>Randall Dipert</dc:contributor>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
-        <dc:contributor>Stefan Schulz</dc:contributor>
         <dc:contributor>Larry Hunter</dc:contributor>
+        <dc:contributor>Stefan Schulz</dc:contributor>
         <dc:contributor>Chris Mungall</dc:contributor>
         <dc:contributor>Ron Rudnicki</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://bfo.googlecode.com/svn/trunk/src/ontology/owl-group/specification/"/>
@@ -2765,10 +1194,10 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
         <dc:contributor>Albert Goldfain</dc:contributor>
         <foaf:homepage rdf:resource="http://code.google.com/p/bfo/"/>
         <rdfs:seeAlso rdf:resource="http://bfo.googlecode.com/svn/trunk/src/tools/"/>
-        <obo:IAO_0000116>BFO 2 Reference: BFO’s treatment of continuants and occurrents – as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality – earlier called the ‘SNAP’ and ‘SPAN’ perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science [30</obo:IAO_0000116>
-        <dc:contributor>Bill Duncan</dc:contributor>
         <dc:contributor>Ludger Jansen</dc:contributor>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
+        <obo:IAO_0000116>BFO 2 Reference: BFO’s treatment of continuants and occurrents – as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality – earlier called the ‘SNAP’ and ‘SPAN’ perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science [30</obo:IAO_0000116>
+        <dc:contributor>Bill Duncan</dc:contributor>
         <rdfs:comment xml:lang="en">This is an early version of BFO version 2 and has not yet been extensively reviewed by the project team members. Please see the project site http://code.google.com/p/bfo/ , the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel , the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx . This ontology is generated from a specification at http://bfo.googlecode.com/svn/trunk/src/ontology/owl-group/specification/ and with the code that generates the OWL version in http://bfo.googlecode.com/svn/trunk/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif</rdfs:comment>
         <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. ‘Entity’ is an example of one such primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
