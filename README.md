@@ -10,6 +10,11 @@ Thd development of the YYO has taken a long time of incubation and thinking. Dr.
 Oliver presented an oral presentation titled "Logic-based Yin-Yang Ontology: Top-level Design for Integrating Traditional Chinese and Western Medicine" on November 9, 2025, in [ICBO 2025](https://icbo-conference.github.io/icbo2025/program/) - the 16th International Conference on Biological and Biomedical Ontology.  
 
 
+## Download: 
+
+https://raw.githubusercontent.com/yinyangontology/YYO/refs/heads/master/src/ontology/yyo-merged.owl 
+
+
 ## References: 
 
 https://en.wikipedia.org/wiki/Yin_and_yang
