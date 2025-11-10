@@ -17,9 +17,10 @@
         <dc:date xml:lang="en">11-10-2025</dc:date>
         <dc:description xml:lang="en">YYO is a formal ontology that represents the Yin and Yang and related entities originated in Chinese philosophy.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
+        <dc:license>http://creativecommons.org/licenses/by/4.0/</dc:license>
         <dc:subject xml:lang="en">YYO: A formal ontology in the domain of Yin and Yang.</dc:subject>
         <dc:title xml:lang="en">YYO: Yin-Yang Ontology 阴阳本体</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.18</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.32</owl:versionInfo>
     </owl:Ontology>
     
 

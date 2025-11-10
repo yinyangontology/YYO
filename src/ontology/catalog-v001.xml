@@ -2,8 +2,8 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/iao/2017-03-24/ontology-metadata.owl" uri="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1762743776669" name="http://purl.obolibrary.org/obo/yyo/BFO_import.owl" uri="imports/BFO_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1762743776669" name="duplicate:http://purl.ontochina.org/yyo.owl" uri="yyo-merged.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1762743776669" name="duplicate:http://purl.ontochina.org/yyo.owl" uri="yyo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1762758184060" name="http://purl.obolibrary.org/obo/yyo/BFO_import.owl" uri="imports/BFO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1762758184060" name="duplicate:http://purl.ontochina.org/yyo.owl" uri="yyo-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1762758184060" name="duplicate:http://purl.ontochina.org/yyo.owl" uri="yyo-merged.owl"/>
     </group>
 </catalog>
