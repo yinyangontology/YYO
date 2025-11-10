@@ -13,6 +13,7 @@ Oliver presented an oral presentation titled "Logic-based Yin-Yang Ontology: Top
 
 https://raw.githubusercontent.com/yinyangontology/YYO/refs/heads/master/src/ontology/yyo-merged.owl 
 
+(note: Its usage follows the open license CC BY 4.0: http://creativecommons.org/licenses/by/4.0/ )
 
 ## References: 
 
