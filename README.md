@@ -1,5 +1,4 @@
-# YYO
-YYO: Yin-Yang Ontology
+# YYO: Yin-Yang Ontology
 
 The Yin-Yang Ontology (YYO) is developed to ontologize the Yin-Yang philosophy originated in China. 
 
